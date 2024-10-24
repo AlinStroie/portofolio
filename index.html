@@ -10,7 +10,7 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Stroie Alin</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -21,7 +21,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Stroie Alin</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -75,13 +75,13 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <!-- <div class="section__pic-container">
           <img
             src="./assets/profile-pic.png"
             alt="Profile picture"
             class="about-pic"
           />
-        </div>
+        </div> -->
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -216,7 +216,7 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container color-container" id="project-container">
             <div class="article-container">
               <img
                 src="./assets/project-1.png"
@@ -240,7 +240,7 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container" id="project-container">
             <div class="article-container">
               <img
                 src="./assets/project-2.png"
@@ -264,7 +264,7 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container" id="project-container">
             <div class="article-container">
               <img
                 src="./assets/project-3.png"
@@ -307,7 +307,25 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:stroiealin02@gmail.com">stroiealin02@gmail.com</a></p>
+          <button id="contact-btn" class="btn btn-color-1">Contact Me</button>
+          <div id="popup-form" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h2>Contact Me</h2>
+                <form id="contact-form" action="mailto:stroiealin02@example.com" method="POST" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit" class="btn-color-1">Send Message</button>
+                </form>
+            </div>
+        </div>
         </div>
         <div class="contact-info-container">
           <img
